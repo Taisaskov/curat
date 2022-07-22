@@ -3,6 +3,7 @@ def delit(n):
     d = 2
     while d*d <= n:
         if n % d == 0:
+            # возвращаем разность макс и мин делителей(кол-во ночей)
             return n//d - d
         d += 1
     return 0
